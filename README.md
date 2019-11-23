@@ -32,7 +32,7 @@ public static function switchTheme()
 
 
 
-博客地址:[raindecloud](raindecloud.top)
+博客地址:[raindecloud](http://raindecloud.top)
 
 之前没使用过Typecho 使用的是wordpress 搞来搞去弄的很臃肿,打开慢的一B...所以直接重新搭建了. 
 
