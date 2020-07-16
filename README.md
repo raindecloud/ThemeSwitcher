@@ -16,7 +16,8 @@
 public static function switchTheme()
     {
         Typecho_Widget::widget('Widget_Options')->to($options); 
-        date_default_timezone_set('PRC'); //设定时区，PRC Primary Reference Clock 基准参bai考时钟（主参考时钟）我国的数字同步网采用主从同步方式，即北京建立基准时钟（PRC）  
+        //设定时区，PRC Primary Reference Clock 基准参考时钟（主参考时钟）我国的数字同步网采用主从同步方式，即北京建立基准时钟（PRC） 
+        date_default_timezone_set('PRC');  
         $hour = date('H');
         //根据时间切换主题 可以自己根据需要进行修改
         if ($hour <= 18 && $hour > 6) {
@@ -34,6 +35,6 @@ public static function switchTheme()
 
 博客地址:[raindecloud](http://raindecloud.top)
 
-之前没使用过Typecho 使用的是wordpress 搞来搞去弄的很臃肿,打开慢的一B...所以直接重新搭建了. 
+之前没使用过Typecho 使用的是wordpress 搞来搞去弄的很臃肿...所以直接重新搭建了. 
 
 因为比较喜欢ios13黑色主题  但是目前还没能力自己搞定在一个主题下切换颜色,所以就忽然想到试一下自动切换主题试试.搞了一会就改出来个这样的小东西 可能对部分人能有帮助
