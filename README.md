@@ -16,7 +16,7 @@
 public static function switchTheme()
     {
         Typecho_Widget::widget('Widget_Options')->to($options); 
-        date_default_timezone_set('PRC'); //设定时区，PRC就是天朝    
+        date_default_timezone_set('PRC'); //设定时区，PRC Primary Reference Clock 基准参bai考时钟（主参考时钟）我国的数字同步网采用主从同步方式，即北京建立基准时钟（PRC）  
         $hour = date('H');
         //根据时间切换主题 可以自己根据需要进行修改
         if ($hour <= 18 && $hour > 6) {
